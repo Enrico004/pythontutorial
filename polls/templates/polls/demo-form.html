@@ -1,0 +1,15 @@
+<form action="http://localhost:8080/polls//17/vote" method="post">
+    {%  csrf_token %}
+    <fieldset>
+        <legend><h1>What are you up to?</h1></legend>
+        <input type="radio" name="choice" id="choice1" value="1">
+        <label for="choice1">Nothing 1</label>
+        <input type="radio" name="choice" id="choice2" value="1">
+        <label for="choice2">Nothing 2</label
+        ><input type="radio" name="choice" id="choice3" value="1">
+        <label for="choice3">Nothing 3</label>
+        <input type="radio" name="choice" id="choice4" value="1">
+        <label for="choice4">Nothing 4</label>
+    </fieldset>
+    <button type="submit" value="vote">Speichern</button>
+</form>
